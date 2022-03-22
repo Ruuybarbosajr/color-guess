@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Kanit', sans-serif;
+}
+.ball {
+  border: 1px solid black;
+  width: 80px;
+  height: 80px;
+  border-radius: 50px;
+  display: inline-block;
+  margin-left: 10px;
+}
+.header-section {
+  text-align: center;
+  margin-bottom: 5px;
+  padding: 15px;
+  background-color: salmon;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.246);
+}
+
+.header-section h1 {
+  font-size: 50px;
+}
+
+.section-score-color {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section-score-color p:nth-child(1) {
+  font-size: 40px;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 40px 0px;
+  transition: 0.5s;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.342);
+  width: 350px;
+  text-align: center;
+}
+
+.section-score-color p:nth-child(2) {
+  margin-bottom: 40px;
+  font-size: 20px;
+}
+
+.balls-color {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+  margin-bottom: 50px;
+}
+
+.ball {
+  opacity: 0.8;
+}
+
+.ball:hover {
+  transform: scale(1.3);
+  transition: 0.5s;
+  opacity: 1;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.342);
+  cursor: pointer;
+}
+
+.section-answer {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 25px;
+}
+
+.section-btn {
+  display: flex;
+  justify-content: center;
+}
+
+.btn-reset {
+  padding: 15px;
+  border: none;
+  background-color: transparent;
+  font-size: 20px;
+  font-weight: 900;
+}
+.btn-reset:hover {
+  background-color: blue;
+  color: white;
+  border-radius: 10px;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.342);
+  cursor: pointer;
+  width: 350px;
+}
+
+.acertou {
+  background-color: greenyellow;
+}
+.errou {
+  background-color: tomato;
+}
+.errou,
+.acertou {
+  width: 350px;
+  padding: 5px 10px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.342);
+  margin: 0 auto;
+}
+
+.class-footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 250px;
+}
+body {
+  background-color: rgba(236, 236, 236, 0.767);
+}
